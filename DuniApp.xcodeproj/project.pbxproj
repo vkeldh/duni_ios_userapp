@@ -14,6 +14,7 @@
 		E7A5B3B524723FAB00652D20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7A5B3B324723FAB00652D20 /* Main.storyboard */; };
 		E7A5B3B724723FAE00652D20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7A5B3B624723FAE00652D20 /* Assets.xcassets */; };
 		E7A5B3BA24723FAE00652D20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7A5B3B824723FAE00652D20 /* LaunchScreen.storyboard */; };
+		E7AAA47324861614003D8C3D /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AAA47224861614003D8C3D /* ProfileVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E7A5B3B624723FAE00652D20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7A5B3B924723FAE00652D20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7A5B3BB24723FAE00652D20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7AAA47224861614003D8C3D /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		F19B1FBFB3D3FB14B594D879 /* Pods-DuniApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuniApp.release.xcconfig"; path = "Target Support Files/Pods-DuniApp/Pods-DuniApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +91,7 @@
 				E7A5B3B624723FAE00652D20 /* Assets.xcassets */,
 				E7A5B3B824723FAE00652D20 /* LaunchScreen.storyboard */,
 				E7A5B3BB24723FAE00652D20 /* Info.plist */,
+				E7AAA47224861614003D8C3D /* ProfileVC.swift */,
 			);
 			path = DuniApp;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7AAA47324861614003D8C3D /* ProfileVC.swift in Sources */,
 				E7A5B3B224723FAB00652D20 /* ViewController.swift in Sources */,
 				E7A5B3AE24723FAB00652D20 /* AppDelegate.swift in Sources */,
 				E7A5B3B024723FAB00652D20 /* SceneDelegate.swift in Sources */,
