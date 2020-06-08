@@ -23,6 +23,15 @@ class ViewController: UIViewController,UIApplicationDelegate,WKScriptMessageHand
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
+        imageView.contentMode = .scaleAspectFit
+        let image = UIImage(named: "dunilogo")
+        imageView.image = image
+        navigationItem.titleView = imageView
+        
+        
+        
         // Do any additional setup after loading the view.
         
         HTTPCookieStorage.shared.cookieAcceptPolicy = HTTPCookie.AcceptPolicy.always
@@ -90,16 +99,16 @@ class ViewController: UIViewController,UIApplicationDelegate,WKScriptMessageHand
     }
     
     @IBAction func etcBtnTap(_ sender: Any) {
-        let registerString = "https://home.duni.io/partner_application.html"
+        /*let registerString = "https://home.duni.io/partner_application.html"
         let str_url = registerString.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)
         let url = URL(string: str_url!)
         let requestObj = URLRequest(url: url! as URL)
-        webView.load(requestObj)
-        /*let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "DefaultLayoutViewController") as! DefaultLayoutViewController
+        webView.load(requestObj)*/
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "ProfileVC") as! ProfileVC
         
-        controller.modalPresentationStyle = .fullScreen
-        self.present(controller, animated: true, completion: nil)*/
+        self.navigationController?.pushViewController(controller, animated: true)
+        //self.present(controller, animated: true, completion: nil)
     }
     
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
@@ -172,6 +181,16 @@ extension ViewController:WKNavigationDelegate{
         webView.evaluateJavaScript(execJsFunc, completionHandler: { (object, error) -> Void in
             
         })
+        
+        webView.evaluateJavaScript("document.getElementById(\"header header-transparent\").removeAttribute(\"href\");") { (result, error) in
+            if error == nil {
+                // header is hide now
+                print(result)
+            }else{
+                print(error)
+                
+            }
+        }
     }
     
     func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration,
