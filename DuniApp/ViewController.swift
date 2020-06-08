@@ -31,7 +31,7 @@ class ViewController: UIViewController,UIApplicationDelegate,WKScriptMessageHand
         navigationItem.titleView = imageView
         
         
-        
+        //a
         // Do any additional setup after loading the view.
         
         HTTPCookieStorage.shared.cookieAcceptPolicy = HTTPCookie.AcceptPolicy.always
