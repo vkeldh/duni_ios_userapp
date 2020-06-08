@@ -253,13 +253,22 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLo-zE-glz">
+                                <rect key="frame" x="364" y="64" width="30" height="30"/>
+                                <state key="normal" title="세팅"/>
+                                <connections>
+                                    <action selector="testAddNode:" destination="9vO-uU-buK" eventType="touchUpInside" id="2XM-2X-lc9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="9sx-em-Sbq" firstAttribute="leading" secondItem="ryc-y7-Dis" secondAttribute="leading" id="9pQ-al-T1j"/>
+                            <constraint firstItem="ryc-y7-Dis" firstAttribute="trailing" secondItem="ZLo-zE-glz" secondAttribute="trailing" constant="20" id="Cyn-0f-X8t"/>
                             <constraint firstItem="ryc-y7-Dis" firstAttribute="trailing" secondItem="Wqi-8q-2Ay" secondAttribute="trailing" constant="16" id="D5V-Kx-xQE"/>
                             <constraint firstItem="ryc-y7-Dis" firstAttribute="bottom" secondItem="Wqi-8q-2Ay" secondAttribute="bottom" constant="20" id="G5L-LH-3Pe"/>
                             <constraint firstItem="yE8-gl-Bw0" firstAttribute="leading" secondItem="ryc-y7-Dis" secondAttribute="leading" id="INV-Vg-vMn"/>
+                            <constraint firstItem="ZLo-zE-glz" firstAttribute="top" secondItem="ryc-y7-Dis" secondAttribute="top" constant="20" id="KcE-Np-pAR"/>
                             <constraint firstItem="Wqi-8q-2Ay" firstAttribute="top" secondItem="t2i-gx-wKk" secondAttribute="bottom" constant="8" symbolic="YES" id="cRN-rS-1w8"/>
                             <constraint firstItem="yE8-gl-Bw0" firstAttribute="height" secondItem="dfq-0b-ZBA" secondAttribute="height" multiplier="1/2" id="dHi-6S-Voe"/>
                             <constraint firstItem="9sx-em-Sbq" firstAttribute="top" secondItem="dfq-0b-ZBA" secondAttribute="top" id="ecH-Ll-XSw"/>

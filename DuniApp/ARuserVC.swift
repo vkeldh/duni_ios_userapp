@@ -160,6 +160,35 @@ class ARuserVC: UIViewController {
             }
         }
     }
+    
+    @IBAction func testAddNode(_ sender: Any) {
+        
+        let myhome1 = buildNode(latitude: 35.2500739, longitude: 126.8122055, altitude: 10, imageName: "pin")
+        sceneLocationView.addLocationNodeWithConfirmedLocation(locationNode: myhome1)
+        
+        
+        
+        let alert = UIAlertController(title: "테스트", message: "좌표를 입력해주세요.", preferredStyle: .alert)
+       
+        alert.addTextField {(textfield) in
+            textfield.placeholder = "latitude"
+        }
+        
+        alert.addTextField {(textfield) in
+            textfield.placeholder = "longitude"
+        }
+        alert.addAction(UIAlertAction(title: "확인", style: .default, handler: {
+            _ in
+            let lat = Double((alert.textFields?[0].text)!)
+            let lon = Double((alert.textFields?[1].text)!)
+            let myhome1 = self.buildNode(latitude: lat!, longitude: lon!, altitude: 10, imageName: "pin")
+            self.sceneLocationView.addLocationNodeWithConfirmedLocation(locationNode: myhome1)
+        }))
+        alert.addAction(UIAlertAction(title: "취소", style: .cancel, handler: nil))
+        
+        self.present(alert, animated: true)
+    }
+    
 }
 
 // MARK: - MKMapViewDelegate
@@ -253,7 +282,7 @@ extension ARuserVC {
     /// - Returns: an array of annotation nodes.
     func buildDemoData() -> [LocationAnnotationNode] {
         var nodes: [LocationAnnotationNode] = []
-        let myhome1 = buildNode(latitude: 35.2500739, longitude: 126.8122055, altitude: 10, imageName: "pin")
+       /* let myhome1 = buildNode(latitude: 35.2500739, longitude: 126.8122055, altitude: 10, imageName: "pin")
         nodes.append(myhome1)
         
         let myhome2 = buildNode(latitude: 35.2085252, longitude: 126.8347306, altitude: 10, imageName: "pin")
@@ -294,7 +323,7 @@ extension ARuserVC {
             pikesPeakLayer.string = "Pike's Peak\n" + Date().description
         }
         
-     
+     */
         
         return nodes
     }
