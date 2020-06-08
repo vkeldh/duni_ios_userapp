@@ -67,5 +67,9 @@
 	</array>
 	<key>UIUserInterfaceStyle</key>
 	<string>Light</string>
+	<key>NSCameraUsageDescription</key>
+	<string>카메라 사용을 허락하시겠습니가?</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This application will use location for Augmented Reality.</string>
 </dict>
 </plist>
