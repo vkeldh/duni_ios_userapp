@@ -30,7 +30,7 @@ class ViewController: UIViewController,UIApplicationDelegate,WKScriptMessageHand
         imageView.image = image
         navigationItem.titleView = imageView
         
-        
+        //a
         
         // Do any additional setup after loading the view.
         
