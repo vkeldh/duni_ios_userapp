@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		41760AD9BC5EDE5049AD4AF6 /* Pods_DuniApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D1F323115A9D42F8BC4BF5 /* Pods_DuniApp.framework */; };
-		E72676FC248E244000B7DF8C /* ARuserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72676FB248E244000B7DF8C /* ARuserVC.swift */; };
-		E72676FF248E291300B7DF8C /* ARmadel.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = E72676FE248E291300B7DF8C /* ARmadel.scnassets */; };
-		E7267701248E2C3300B7DF8C /* NavigationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7267700248E2C3300B7DF8C /* NavigationService.swift */; };
 		E7A5B3AE24723FAB00652D20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A5B3AD24723FAB00652D20 /* AppDelegate.swift */; };
 		E7A5B3B024723FAB00652D20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A5B3AF24723FAB00652D20 /* SceneDelegate.swift */; };
 		E7A5B3B224723FAB00652D20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A5B3B124723FAB00652D20 /* ViewController.swift */; };
@@ -24,9 +21,6 @@
 		2EE2B2EB3FB4FEAB77DBB0CC /* Pods-DuniApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuniApp.debug.xcconfig"; path = "Target Support Files/Pods-DuniApp/Pods-DuniApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A3D1F323115A9D42F8BC4BF5 /* Pods_DuniApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DuniApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E71CB105247B988600F08495 /* DuniApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DuniApp.entitlements; sourceTree = "<group>"; };
-		E72676FB248E244000B7DF8C /* ARuserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARuserVC.swift; sourceTree = "<group>"; };
-		E72676FE248E291300B7DF8C /* ARmadel.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = ARmadel.scnassets; sourceTree = "<group>"; };
-		E7267700248E2C3300B7DF8C /* NavigationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationService.swift; sourceTree = "<group>"; };
 		E7A5B3AA24723FAB00652D20 /* DuniApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuniApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7A5B3AD24723FAB00652D20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7A5B3AF24723FAB00652D20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,9 +92,6 @@
 				E7A5B3B824723FAE00652D20 /* LaunchScreen.storyboard */,
 				E7A5B3BB24723FAE00652D20 /* Info.plist */,
 				E7AAA47224861614003D8C3D /* ProfileVC.swift */,
-				E72676FB248E244000B7DF8C /* ARuserVC.swift */,
-				E72676FE248E291300B7DF8C /* ARmadel.scnassets */,
-				E7267700248E2C3300B7DF8C /* NavigationService.swift */,
 			);
 			path = DuniApp;
 			sourceTree = "<group>";
@@ -116,7 +107,6 @@
 				E7A5B3A624723FAB00652D20 /* Sources */,
 				E7A5B3A724723FAB00652D20 /* Frameworks */,
 				E7A5B3A824723FAB00652D20 /* Resources */,
-				9CEB9AFEB69738AC6BF4F3DF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -165,7 +155,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E72676FF248E291300B7DF8C /* ARmadel.scnassets in Resources */,
 				E7A5B3BA24723FAE00652D20 /* LaunchScreen.storyboard in Resources */,
 				E7A5B3B724723FAE00652D20 /* Assets.xcassets in Resources */,
 				E7A5B3B524723FAB00652D20 /* Main.storyboard in Resources */,
@@ -197,23 +186,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9CEB9AFEB69738AC6BF4F3DF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DuniApp/Pods-DuniApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DuniApp/Pods-DuniApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DuniApp/Pods-DuniApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -222,11 +194,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7AAA47324861614003D8C3D /* ProfileVC.swift in Sources */,
-				E7267701248E2C3300B7DF8C /* NavigationService.swift in Sources */,
 				E7A5B3B224723FAB00652D20 /* ViewController.swift in Sources */,
 				E7A5B3AE24723FAB00652D20 /* AppDelegate.swift in Sources */,
 				E7A5B3B024723FAB00652D20 /* SceneDelegate.swift in Sources */,
-				E72676FC248E244000B7DF8C /* ARuserVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

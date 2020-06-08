@@ -6,5 +6,5 @@ target 'DuniApp' do
   use_frameworks!
 
   # Pods for DuniApp
-  pod 'ARCL'
+
 end
