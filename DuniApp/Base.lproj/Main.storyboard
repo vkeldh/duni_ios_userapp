@@ -161,9 +161,9 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbp-xD-ocM">
                                 <rect key="frame" x="100" y="732" width="214" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="AR테스트"/>
                                 <connections>
-                                    <segue destination="9vO-uU-buK" kind="presentation" modalPresentationStyle="fullScreen" id="pb5-el-COx"/>
+                                    <segue destination="9vO-uU-buK" kind="show" id="pb5-el-COx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -254,7 +254,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLo-zE-glz">
-                                <rect key="frame" x="364" y="64" width="30" height="30"/>
+                                <rect key="frame" x="364" y="108" width="30" height="30"/>
                                 <state key="normal" title="세팅"/>
                                 <connections>
                                     <action selector="testAddNode:" destination="9vO-uU-buK" eventType="touchUpInside" id="2XM-2X-lc9"/>

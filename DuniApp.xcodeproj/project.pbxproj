@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,8 @@
 		E7A5B3B524723FAB00652D20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7A5B3B324723FAB00652D20 /* Main.storyboard */; };
 		E7A5B3B724723FAE00652D20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7A5B3B624723FAE00652D20 /* Assets.xcassets */; };
 		E7A5B3BA24723FAE00652D20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7A5B3B824723FAE00652D20 /* LaunchScreen.storyboard */; };
+		E7A5C3752497632700170BD1 /* ARdata.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A5C3742497632700170BD1 /* ARdata.swift */; };
+		E7A5C3772497786400170BD1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A5C3762497786400170BD1 /* MapKit.framework */; };
 		E7AAA47324861614003D8C3D /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AAA47224861614003D8C3D /* ProfileVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,8 @@
 		E7A5B3B624723FAE00652D20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7A5B3B924723FAE00652D20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7A5B3BB24723FAE00652D20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7A5C3742497632700170BD1 /* ARdata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARdata.swift; sourceTree = "<group>"; };
+		E7A5C3762497786400170BD1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		E7AAA47224861614003D8C3D /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		F19B1FBFB3D3FB14B594D879 /* Pods-DuniApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuniApp.release.xcconfig"; path = "Target Support Files/Pods-DuniApp/Pods-DuniApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -44,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7A5C3772497786400170BD1 /* MapKit.framework in Frameworks */,
 				41760AD9BC5EDE5049AD4AF6 /* Pods_DuniApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,6 +59,7 @@
 		74FAB5B8DB9E0E12507276C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E7A5C3762497786400170BD1 /* MapKit.framework */,
 				A3D1F323115A9D42F8BC4BF5 /* Pods_DuniApp.framework */,
 			);
 			name = Frameworks;
@@ -89,6 +95,7 @@
 		E7A5B3AC24723FAB00652D20 /* DuniApp */ = {
 			isa = PBXGroup;
 			children = (
+				E7A5C3732497630A00170BD1 /* Data */,
 				E71CB105247B988600F08495 /* DuniApp.entitlements */,
 				E7A5B3AD24723FAB00652D20 /* AppDelegate.swift */,
 				E7A5B3AF24723FAB00652D20 /* SceneDelegate.swift */,
@@ -103,6 +110,14 @@
 				E7267700248E2C3300B7DF8C /* NavigationService.swift */,
 			);
 			path = DuniApp;
+			sourceTree = "<group>";
+		};
+		E7A5C3732497630A00170BD1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E7A5C3742497632700170BD1 /* ARdata.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +242,7 @@
 				E7A5B3AE24723FAB00652D20 /* AppDelegate.swift in Sources */,
 				E7A5B3B024723FAB00652D20 /* SceneDelegate.swift in Sources */,
 				E72676FC248E244000B7DF8C /* ARuserVC.swift in Sources */,
+				E7A5C3752497632700170BD1 /* ARdata.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

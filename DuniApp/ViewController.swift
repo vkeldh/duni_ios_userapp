@@ -14,7 +14,7 @@ class ViewController: UIViewController,UIApplicationDelegate,WKScriptMessageHand
     @IBOutlet weak var webViewContainer: UIView!
     
 
-     let requestURLString =  "https://home.duni.io/start.html"
+     let requestURLString =  "https://duni.io/index.php"
     
     var webView: WKWebView!
     var backButton: UIButton!
